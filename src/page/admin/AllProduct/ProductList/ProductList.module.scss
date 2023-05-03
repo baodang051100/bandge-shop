@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+    padding: 2rem;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        h1 {
+            font-family: "Poppins";
+            font-size: 2rem;
+        }
+    }
+}
+
+.formUpdate {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    label {
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-family: "Poppins";
+    }
+    input {
+        padding: 1rem 0;
+        font-weight: 400;
+        font-family: "Poppins";
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+    }
+}

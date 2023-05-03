@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+.product {
+    padding: 2rem;
+    font-family: "Poppins";
+    .title {
+        font-size: 2rem;
+        font-weight: 700;
+        
+    }
+    .card {
+        padding: 2rem;
+    }
+}

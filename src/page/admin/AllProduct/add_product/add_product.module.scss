@@ -1,0 +1,42 @@
+.addProduct {
+    position: relative;
+    font-family: "Poppins";
+    .container {
+        display: flex;
+        flex-direction: column;
+        .title {
+            text-align: center;
+            font-size: large;
+            font-weight: 700;
+            padding: 0.5rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 0;
+            label {
+                padding: 0.5rem 0;
+                font-size: 1rem;
+            }
+            input {
+                padding: 0.5rem;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid black;
+            }
+            select {
+                padding: 0.5rem;
+                border-radius: 5px;
+            }
+            .cate_price {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

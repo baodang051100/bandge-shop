@@ -1,0 +1,101 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    .header {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        a {
+            text-decoration: none;
+        }
+    }
+    .logo a h2 {
+        width: 25%;
+        cursor: pointer;
+        color: #fff;
+        span {
+            text-decoration: none;
+            color: #5b6071;
+            font-weight: bold;
+        }
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            font-weight: 500;
+            li {
+                padding: 1rem;
+                a {
+                    text-decoration: none;
+                    color: #5b6071;
+                    font-size: 20px;
+                    &:hover {
+                        color: orangered;
+                    }
+                }
+            }
+        }
+    }
+    .header_right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .loginBtn {
+            display: flex;
+            align-items: center;
+            width: 5vw;
+            max-width: 100%;
+            height: 2.5rem;
+            border: 1px solid black;
+            background-color: #fff;
+            color: black;
+            line-height: 3.5rem;
+            p {
+                padding: 0 0.5rem;
+            }
+        }
+        .cart a {
+            display: flex;
+            color: #23a6f0;
+            position: relative;
+            &:hover {
+                color: orangered;
+            }
+            .cartBtn {
+                display: block;
+                width: 3.5vw;
+                height: 3.5rem;
+                border-radius: 50%;
+                border: 1px solid black;
+                background-color: #fff;
+                color: black;
+                line-height: 3.5rem;
+            }
+            p {
+                position: absolute;
+                top: -1rem;
+                right: -10px;
+                font-weight: 500;
+                color: black;
+            }
+        }
+        span {
+            margin: 0 5px;
+            p {
+                color: #23a6f0;
+            }
+        }
+    }
+}

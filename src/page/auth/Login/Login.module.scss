@@ -1,0 +1,81 @@
+.auth {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .card {
+        border: 1px solid transparent;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px 5px #ccc8c8 ;
+        overflow: hidden;
+    }
+    .img {
+        img {
+            width: 500px;
+        }
+    }
+
+    .form {
+        width: 400px;
+        padding: 15px;
+        h2 {
+            color: orangered;
+            text-align: center;
+        }
+        form {
+            input {
+                display: block;
+                font-size: 16px;
+                font-weight: 300;
+                padding: 10px;
+                margin: 10px auto;
+                width: 100%;
+                border: 1px solid #777;
+                border-radius: 3px;
+                outline: none;
+            }
+        }
+        .btn_login {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            background-color: #006DCB;
+            color: #fff;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            a {
+                text-decoration: none;
+            }
+        }
+        p {
+            text-align: center;
+            margin: 10px;
+        }
+        .btn_logingg {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            background-color: orangered;
+            color: #fff;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        .register {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            a {
+                text-decoration: none;
+                color: #0e0d0d;
+                font-weight: 300;
+            }
+        }
+    }
+}

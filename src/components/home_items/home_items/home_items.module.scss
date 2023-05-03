@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+.home_items_editor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    height: 100vh;
+    .container {
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .title {
+        text-align: center;
+        font-family: "Poppins";
+        padding: 1rem 0;
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        p {
+            color: #737373;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+        margin: auto;
+        img {
+            border: 1px solid gray;
+            border-radius: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        .left_image {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 1.875rem;
+            position: relative;
+            .chair {
+                width: 50%;
+                height: 80vh;
+                object-fit: contain;
+            }
+            .chair_content {
+                position: absolute;
+                padding: 1rem;
+                bottom: 0.5rem;
+                flex: 1;
+                button {
+                    width: 100%;
+                    border: 1px solid #fafafa;
+                    border-radius: 3px;
+                    font-weight: 700;
+                    border: 1px solid black;
+                    flex: 1;
+                }
+                & :hover {
+                    background-color: white;
+                }
+            }
+            .phone {
+                width: 45%;
+                height: 80vh;
+                object-fit: contain;
+            }
+            .phone_content {
+                position: absolute;
+                padding: 1rem;
+                bottom: 0.5rem;
+                left: 53%;
+                flex: 1;
+                button {
+                    width: 100%;
+                    border: 1px solid #fafafa;
+                    border-radius: 3px;
+                    font-weight: 700;
+                    border: 1px solid black;
+                }
+                & :hover {
+                    background-color: white;
+                }
+            }
+        }
+        .image_right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 1rem;
+            position: relative;
+            height: 80vh;
+            img {
+                width: 100%;
+                height: 50%;
+                object-fit: contain;
+            }
+            .watch_content {
+                position: absolute;
+                padding: 1rem;
+                bottom: 25rem;
+                flex: 1;
+                button {
+                    width: 100%;
+                    border: 1px solid #fafafa;
+                    border-radius: 3px;
+                    font-weight: 700;
+                    border: 1px solid black;
+                }
+                & :hover {
+                    background-color: white;
+                }
+            }
+            .wireless_content {
+                position: absolute;
+                padding: 1rem;
+                bottom: 0.5rem;
+                flex: 1;
+                button {
+                    width: 100%;
+                    border: 1px solid #fafafa;
+                    border-radius: 3px;
+                    font-weight: 700;
+                    border: 1px solid black;
+                }
+                & :hover {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
