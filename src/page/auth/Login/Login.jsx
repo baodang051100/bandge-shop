@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from "./Login.module.scss";
 import LoginImage from "../../../assets/login.jpg"
 import { Link, useNavigate } from 'react-router-dom';
@@ -7,6 +7,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../../../firebase/firebase'
 import { toast } from 'react-toastify';
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { REMOVE_ACTIVE_USER } from '../../../redux/slice/authSlice';
 
 
 const Login = () => {
@@ -14,6 +15,8 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+
+
 
     const login = async (e) => {
         e.preventDefault();
