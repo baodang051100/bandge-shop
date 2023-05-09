@@ -68,7 +68,6 @@ const Header = () => {
         });
     }, [dispatch, displayName]);
 
-
     const logOut = () => {
         signOut(auth).then(() => {
             toast.success("LogOut successfully!!!")
