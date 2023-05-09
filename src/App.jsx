@@ -36,7 +36,7 @@ function App() {
           <Route path='/add_product' element={<AddProduct />}></Route>
           <Route path='/list_product' element={<ProductList />}></Route>
           <Route path='/cart' element={<Cart />}></Route>
-          <Route path='/products' element={isLogin === true ? (<Products />) : (<Navigate to="/login" />)}></Route>
+          <Route path='/products' element={isLogin === false ? (<Products />) : (<Navigate to="/login" />)}></Route>
           <Route path='/user' element={<User />}></Route>
         </Routes>
         <Footer />
