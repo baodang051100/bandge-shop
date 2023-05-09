@@ -18,6 +18,7 @@ import {
 function App() {
 
   const user = useSelector((state) => state.auth);
+  const isLogin = localStorage.getItem("user")
 
   return (
     <div className={styles.app}>
@@ -35,7 +36,7 @@ function App() {
           <Route path='/add_product' element={<AddProduct />}></Route>
           <Route path='/list_product' element={<ProductList />}></Route>
           <Route path='/cart' element={<Cart />}></Route>
-          <Route path='/products' element={user.issLogIn === true ? (<Products />) : (<Navigate to="/login" />)}></Route>
+          <Route path='/products' element={isLogin === true ? (<Products />) : (<Navigate to="/login" />)}></Route>
           <Route path='/user' element={<User />}></Route>
         </Routes>
         <Footer />
