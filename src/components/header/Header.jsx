@@ -68,12 +68,6 @@ const Header = () => {
         });
     }, [dispatch, displayName]);
 
-    useEffect(() => {
-        return () => {
-            dispatch(REMOVE_ACTIVE_USER());
-        }
-    })
-
     const logOut = () => {
         signOut(auth).then(() => {
             toast.success("LogOut successfully!!!")
