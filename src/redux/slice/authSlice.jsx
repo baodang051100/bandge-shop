@@ -18,14 +18,14 @@ const authSlice = createSlice({
       state.email = email
       state.userName = userName
       state.userId = userId
-      localStorage.setItem("user", JSON.stringify(state.issLogIn));
+      sessionStorage.setItem("user", JSON.stringify(state.issLogIn));
     },
     REMOVE_ACTIVE_USER: (state) => {
       state.issLogIn = false
       state.email = null
       state.userName = null
       console.log(state.issLogIn)
-      localStorage.setItem("user", JSON.stringify(state.issLogIn));
+      sessionStorage.setItem("user", JSON.stringify(state.issLogIn));
     },
   }
 });
