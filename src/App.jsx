@@ -14,11 +14,11 @@ import {
   //Admin
   ProductList, Admin, AddProduct
 } from "./page";
+import { selectIsLogin } from './redux/slice/authSlice';
 
 function App() {
 
   const user = useSelector((state) => state.auth);
-  const isLogin = localStorage.getItem("user")
 
   return (
     <div className={styles.app}>
@@ -36,7 +36,7 @@ function App() {
           <Route path='/add_product' element={<AddProduct />}></Route>
           <Route path='/list_product' element={<ProductList />}></Route>
           <Route path='/cart' element={<Cart />}></Route>
-          <Route path='/products' element={isLogin === false ? (<Products />) : (<Navigate to="/login" />)}></Route>
+          <Route path='/products' element={selectIsLogin === true ? (<Products />) : (<Navigate to="/login" />)}></Route>
           <Route path='/user' element={<User />}></Route>
         </Routes>
         <Footer />
