@@ -22,7 +22,7 @@ const HomeProduct = () => {
                 </div>
                 <div className={styles.product_items}>
                     <div className={styles.frist}>
-                        <div>
+                        <div className={styles.fristItems}>
                             <img src={doubleSofa01} alt=''></img>
                             <div className={styles.content}>
                                 <h3>Double Sofa</h3>
@@ -34,7 +34,7 @@ const HomeProduct = () => {
                                 {/* <div><FaCircle /><FaCircle /><FaCircle /><FaCircle /></div> */}
                             </div>
                         </div>
-                        <div>
+                        <div className={styles.fristItems}>
                             <img src={nftConsole} alt=''></img>
                             <div className={styles.content}>
                                 <h3>Gaming NFT Console</h3>
@@ -46,7 +46,7 @@ const HomeProduct = () => {
                                 {/* <div><FaCircle /><FaCircle /><FaCircle /><FaCircle /></div> */}
                             </div>
                         </div>
-                        <div>
+                        <div className={styles.fristItems}>
                             <img src={wireless01} alt=''></img>
                             <div className={styles.content}>
                                 <h3>Wireless</h3>
@@ -58,7 +58,7 @@ const HomeProduct = () => {
                                 {/* <div><FaCircle /><FaCircle /><FaCircle /><FaCircle /></div> */}
                             </div>
                         </div>
-                        <div>
+                        <div className={styles.fristItems}>
                             <img src={laptopAsus} alt=''></img>
                             <div className={styles.content}>
                                 <h3>Laptop Asus</h3>
@@ -72,7 +72,7 @@ const HomeProduct = () => {
                         </div>
                     </div>
                     <div className={styles.second}>
-                        <div>
+                        <div className={styles.secondItems}>
                             <img src={macbook} alt=''></img>
                             <div className={styles.content}>
                                 <h3>Macbook Pro M1</h3>
@@ -84,7 +84,7 @@ const HomeProduct = () => {
                                 {/* <div><FaCircle /><FaCircle /><FaCircle /><FaCircle /></div> */}
                             </div>
                         </div>
-                        <div>
+                        <div className={styles.secondItems}>
                             <img src={flycam} alt=''></img>
                             <div className={styles.content}>
                                 <h3>Flycam DJI Avata</h3>
@@ -96,7 +96,7 @@ const HomeProduct = () => {
                                 {/* <div><FaCircle /><FaCircle /><FaCircle /><FaCircle /></div> */}
                             </div>
                         </div>
-                        <div>
+                        <div className={styles.secondItems}>
                             <img src={heroImg} alt=''></img>
                             <div className={styles.content}>
                                 <h3>Single Sofa</h3>
@@ -108,7 +108,7 @@ const HomeProduct = () => {
                                 {/* <div><FaCircle /><FaCircle /><FaCircle /><FaCircle /></div> */}
                             </div>
                         </div>
-                        <div>
+                        <div className={styles.secondItems}>
                             <img src={phone03} alt=''></img>
                             <div className={styles.content}>
                                 <h3>Phone</h3>
@@ -122,8 +122,10 @@ const HomeProduct = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.load_more} style={{color: "blue"}}>
-                    <Link to="/products">LOAD MORE PRODUCTS</Link>
+                <div className={styles.loadMoreProducts}>
+                    <div className={styles.load_more} style={{ color: "blue" }}>
+                        <Link to="/products">LOAD MORE PRODUCTS</Link>
+                    </div>
                 </div>
             </div>
         </div>

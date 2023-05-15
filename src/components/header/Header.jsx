@@ -11,6 +11,8 @@ import { useSelector } from 'react-redux';
 import { Button, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const logo = (
     <div className={styles.logo}>
@@ -77,17 +79,34 @@ const Header = () => {
         });
     }
 
+    const [click, setClick] = useState(false);
+
+
     return (
         <>
             <header>
                 <div className={styles.header}>
-                    {logo}
                     <nav>
-                        <ul>
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link to='/contact'>Contact Us</Link></li>
-                            <li><Link to='/products'>Shop</Link></li>
-                        </ul>
+                        {logo}
+                        <div className={styles.menu}>
+                            <div className={styles.menuToggle}>
+                                <Button
+                                    onClick={() => setClick(!click)}
+                                    className={styles.btnMenu}
+                                >
+                                    <span>Menu</span>
+                                    {click ? <CloseIcon /> : <MenuIcon />}
+                                </Button>
+                            </div>
+                            <ul
+                                className={click ? `${styles.navMobile}` : `${styles.navItems}`}
+                                onClick={() => setClick(false)}
+                            >
+                                <li><Link to='/'>Home</Link></li>
+                                <li><Link to='/contact'>Contact Us</Link></li>
+                                <li><Link to='/products'>Shop</Link></li>
+                            </ul>
+                        </div>
                         <div className={styles.header_right}>
                             <span className={styles.links}>
                                 <ShowOnLogin>
