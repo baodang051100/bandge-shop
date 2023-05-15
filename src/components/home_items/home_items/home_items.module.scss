@@ -136,7 +136,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1200px) {
     .home_items_editor  {
         .container {
             article {
@@ -153,13 +153,18 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .home_items_editor {
         article {
             display: flex;
             justify-content: space-between;
             .left_image {
-                gap: 0;
+                gap: 1rem;
+            }
+            .image_right {
+                .watch_content {
+                    bottom: 22rem;
+                }
             }
         }
     }
